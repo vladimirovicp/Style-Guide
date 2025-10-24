@@ -14,7 +14,7 @@
 * Perl
 * Ruby
 * Java
-* [JavaScript](./JavaScript/)
+* JavaScript
 * Lua
 * Haskell
 * Erlang
@@ -24,7 +24,7 @@
 
 ## JavaScript
 
-### Cтилb кодирования
+### Cтили кодирования
 
 **Общепринятые стандарты**
 
@@ -44,6 +44,6 @@
 * Pre-commit хуки (через Husky, lint-staged)
 
 **Использование конфигурационных файлов:**
-* .eslintrc.js, 
+* .eslint.config.js, 
 * .prettierrc, 
 * .editorconfig
