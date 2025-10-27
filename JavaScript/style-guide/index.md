@@ -1345,6 +1345,14 @@
   `hello`.indexOf('o')
   ```
 
+
+
+
+
+
+
+  
+
   Note: If you're often writing code like this, you may be trying to be too clever.
 
   Clever short-hands are discouraged, in favor of clear and readable expressions, whenever
