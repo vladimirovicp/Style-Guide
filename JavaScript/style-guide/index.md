@@ -36,7 +36,7 @@
   }
   ```
 
-* **Add a space after keywords.**
+* **Добавьте пробел после ключевых слов.**
 
   eslint: [`keyword-spacing`](http://eslint.org/docs/rules/keyword-spacing)
 
@@ -45,7 +45,7 @@
   if(condition) { ... }    // ✗ avoid
   ```
 
-* **Add a space before a function declaration's parentheses.**
+* **Добавьте пробел перед скобками в объявлении функции.**
 
   eslint: [`space-before-function-paren`](http://eslint.org/docs/rules/space-before-function-paren)
 
@@ -57,8 +57,8 @@
   run(function() { ... })       // ✗ avoid
   ```
 
-* **Always use** `===` instead of `==`.<br>
-  Exception: `obj == null` is allowed to check for `null || undefined`.
+* **Всегда используйте** `===` вместо `==`.<br>
+  Исключение: `obj == null` можно использовать для проверки `null || undefined`.
 
   eslint: [`eqeqeq`](http://eslint.org/docs/rules/eqeqeq)
 
@@ -72,7 +72,7 @@
   if (name != 'John')    // ✗ avoid
   ```
 
-* **Infix operators** must be spaced.
+* **Инфиксные операторы** олжны быть разделены пробелами.
 
   eslint: [`space-infix-ops`](http://eslint.org/docs/rules/space-infix-ops)
 
@@ -88,7 +88,7 @@
   var message = 'hello, '+name+'!'
   ```
 
-* **Commas should have a space** after them.
+* **После запятых должен быть пробел**.
 
   eslint: [`comma-spacing`](http://eslint.org/docs/rules/comma-spacing)
 
@@ -104,7 +104,7 @@
   function greet (name,options) { ... }
   ```
 
-* **Keep else statements** on the same line as their curly braces.
+* **Указывайте операторы else** в той же строке, что и их фигурные скобки.
 
   eslint: [`brace-style`](http://eslint.org/docs/rules/brace-style)
 
@@ -127,7 +127,7 @@
   }
   ```
 
-* **For multi-line if statements,** use curly braces.
+* **Для многострочных операторов if** используйте фигурные скобки..
 
   eslint: [`curly`](http://eslint.org/docs/rules/curly)
 
@@ -149,7 +149,7 @@
     console.log('done')
   ```
 
-* **Always handle the** `err` function parameter.
+* **Всегда обрабатывайте** `err` параметр функции.
 
   eslint: [`handle-callback-err`](http://eslint.org/docs/rules/handle-callback-err)
   ```js
@@ -167,10 +167,10 @@
   })
   ```
 
-* **Declare browser globals** with a `/* global */` comment.<br>
-  Exceptions are: `window`, `document`, and `navigator`.<br>
-  Prevents accidental use of poorly-named browser globals like `open`, `length`,
-  `event`, and `name`.
+* **Объявите глобальные переменные браузера** с помощью `/* global */` комментария.<br>
+  Исключения: `window`, `document`, и `navigator`.<br>
+  Предотвращает случайное использование глобальных переменных браузера с неудачными именами, таких как `open`, `length`,
+  `event`, и `name`.
 
   ```js
   /* global alert, prompt */
@@ -179,8 +179,8 @@
   prompt('ok?')
   ```
 
-  Explicitly referencing the function or property on `window` is okay too, though
-  such code will not run in a Worker which uses `self` instead of `window`.
+  Явное указание на функцию или свойство в `window` тоже допустимо, хотя такой код не 
+  будет работать в Worker, где используется `self` вместо `window`.
 
   eslint: [`no-undef`](http://eslint.org/docs/rules/no-undef)
 
@@ -188,7 +188,7 @@
   window.alert('hi')   // ✓ ok
   ```
 
-* **Multiple blank lines not allowed.**
+* **Несколько пустых строк не допускаются.**
 
   eslint: [`no-multiple-empty-lines`](http://eslint.org/docs/rules/no-multiple-empty-lines)
 
@@ -206,7 +206,7 @@
   console.log(value)
   ```
 
-* **For the ternary operator** in a multi-line setting, place `?` and `:` on their own lines.
+* **Для тернарного оператора** в многострочном формате разместите `?` и `:` на отдельных строках.
 
   eslint: [`operator-linebreak`](http://eslint.org/docs/rules/operator-linebreak)
 
@@ -225,7 +225,7 @@
     'www.api.com'
   ```
 
-* **For var declarations,** write each declaration in its own statement.
+* **Для объявлений переменных** запишите каждое объявление в отдельной строке.
 
   eslint: [`one-var`](http://eslint.org/docs/rules/one-var)
 
@@ -242,7 +242,7 @@
       verbose = true
   ```
 
-* **Wrap conditional assignments** with additional parentheses. This makes it clear that the expression is intentionally an assignment (`=`) rather than a typo for equality (`===`).
+* **Заключите условные присваивания** в дополнительные скобки. Так будет понятно, что выражение намеренно является присваиванием (`=`), а не опечаткой в сравнении (`===`).
 
   eslint: [`no-cond-assign`](http://eslint.org/docs/rules/no-cond-assign)
 
@@ -258,7 +258,7 @@
   }
   ```
 
-* **Add spaces inside single line blocks.**
+* **Добавляйте пробелы внутри однострочных блоков.**
 
   eslint: [`block-spacing`](http://eslint.org/docs/rules/block-spacing)
 
@@ -267,7 +267,7 @@
     function foo () { return true }  // ✓ ok
   ```
 
-* **Use camelcase when naming variables and functions.**
+* **При именовании переменных и функций используйте стиль camelcase.**
 
   eslint: [`camelcase`](http://eslint.org/docs/rules/camelcase)
 
@@ -279,7 +279,7 @@
     var myVar = 'hello'            // ✓ ok
   ```
 
-* **Trailing commas not allowed.**
+* **Запятые в конце предложения не допускаются.**
 
   eslint: [`comma-dangle`](http://eslint.org/docs/rules/comma-dangle)
 
@@ -289,7 +289,7 @@
     }
   ```
 
-* **Commas must be placed at the end of the current line.**
+* **Запятые должны стоять в конце текущей строки.**
 
   eslint: [`comma-style`](http://eslint.org/docs/rules/comma-style)
 
@@ -305,7 +305,7 @@
     }
   ```
 
-* **Dot should be on the same line as property.**
+* **Точка должна находиться на одной линии со свойством.**
 
   eslint: [`dot-location`](http://eslint.org/docs/rules/dot-location)
 
@@ -317,11 +317,11 @@
       .log('hello') // ✓ ok
   ```
 
-* **Files must end with a newline.**
+* **Файлы должны заканчиваться переводом строки.**
 
   eslint: [`eol-last`](http://eslint.org/docs/rules/eol-last)
 
-* **No space between function identifiers and their invocations.**
+* **Между идентификаторами функций и их вызовами не должно быть пробелов.**
 
   eslint: [`func-call-spacing`](http://eslint.org/docs/rules/func-call-spacing)
 
@@ -330,7 +330,7 @@
   console.log('hello')  // ✓ ok
   ```
 
-* **Add space between colon and value in key value pairs.**
+* **Добавьте пробел между двоеточием и значением в парах «ключ-значение»**
 
   eslint: [`key-spacing`](http://eslint.org/docs/rules/key-spacing)
 
@@ -341,7 +341,7 @@
   var obj = { 'key': 'value' }     // ✓ ok
   ```
 
-* **Constructor names must begin with a capital letter.**
+* **Имена конструкторов должны начинаться с заглавной буквы.**
 
   eslint: [`new-cap`](http://eslint.org/docs/rules/new-cap)
 
@@ -353,7 +353,7 @@
   var dog = new Animal()    // ✓ ok
   ```
 
-* **Constructor with no arguments must be invoked with parentheses.**
+* **Конструктор без аргументов должен вызываться с использованием круглых скобок.**
 
   eslint: [`new-parens`](http://eslint.org/docs/rules/new-parens)
 
@@ -363,7 +363,7 @@
   var dog = new Animal()  // ✓ ok
   ```
 
-* **Objects must contain a getter when a setter is defined.**
+* **Если задан сеттер, объект должен содержать геттер.**
 
   eslint: [`accessor-pairs`](http://eslint.org/docs/rules/accessor-pairs)
 
@@ -384,7 +384,7 @@
   }
   ```
 
-* **Constructors of derived classes must call `super`.**
+* **Конструкторы производных классов должны вызывать `super`.**
 
   eslint: [`constructor-super`](http://eslint.org/docs/rules/constructor-super)
 
@@ -410,7 +410,7 @@
   }
   ```
 
-* **Use array literals instead of array constructors.**
+* **Используйте литералы массивов вместо конструкторов массивов.**
 
   eslint: [`no-array-constructor`](http://eslint.org/docs/rules/no-array-constructor)
 
@@ -419,7 +419,7 @@
   var nums = [1, 2, 3]            // ✓ ok
   ```
 
-* **Avoid using `arguments.callee` and `arguments.caller`.**
+* **Не используйте `arguments.callee` и `arguments.caller`.**
 
   eslint: [`no-caller`](http://eslint.org/docs/rules/no-caller)
 
@@ -437,7 +437,7 @@
   }
   ```
 
-* **Avoid modifying variables of class declarations.**
+* **Не изменяйте переменные в объявлениях классов.**
 
   eslint: [`no-class-assign`](http://eslint.org/docs/rules/no-class-assign)
 
@@ -446,7 +446,7 @@
   Dog = 'Fido'    // ✗ avoid
   ```
 
-* **Avoid modifying variables declared using `const`.**
+* **Не изменяйте переменные, объявленные с помощью `const`.**
 
   eslint: [`no-const-assign`](http://eslint.org/docs/rules/no-const-assign)
 
@@ -455,7 +455,7 @@
   score = 125       // ✗ avoid
   ```
 
-* **Avoid using constant expressions in conditions (except loops).**
+* **Избегайте использования константных выражений в условиях (кроме циклов).**
 
   eslint: [`no-constant-condition`](http://eslint.org/docs/rules/no-constant-condition)
 
@@ -473,7 +473,7 @@
   }
   ```
 
-* **No control characters in regular expressions.**
+* **В регулярных выражениях нет управляющих символов.**
 
   eslint: [`no-control-regex`](http://eslint.org/docs/rules/no-control-regex)
 
@@ -482,7 +482,7 @@
   var pattern = /\x20/    // ✓ ok
   ```
 
-* **No `debugger` statements.**
+* **Никаких `debugger` заявлений.**
 
   eslint: [`no-debugger`](http://eslint.org/docs/rules/no-debugger)
 
@@ -493,7 +493,7 @@
   }
   ```
 
-* **No `delete` operator on variables.**
+* **Оператор `delete` для переменных не используется.**
 
   eslint: [`no-delete-var`](http://eslint.org/docs/rules/no-delete-var)
 
@@ -502,7 +502,7 @@
   delete name     // ✗ avoid
   ```
 
-* **No duplicate arguments in function definitions.**
+* **В определениях функций не должно быть повторяющихся аргументов.**
 
   eslint: [`no-dupe-args`](http://eslint.org/docs/rules/no-dupe-args)
 
@@ -516,7 +516,7 @@
   }
   ```
 
-* **No duplicate name in class members.**
+* **В членах класса не должно быть повторяющихся имён.**
 
   eslint: [`no-dupe-class-members`](http://eslint.org/docs/rules/no-dupe-class-members)
 
@@ -527,7 +527,7 @@
   }
   ```
 
-* **No duplicate keys in object literals.**
+* **В объектных литералах не должно быть повторяющихся ключей.**
 
   eslint: [`no-dupe-keys`](http://eslint.org/docs/rules/no-dupe-keys)
 
@@ -538,7 +538,7 @@
   }
   ```
 
-* **No duplicate `case` labels in `switch` statements.**
+* **В операторах `case` не должно быть повторяющихся меток `switch`.**
 
   eslint: [`no-duplicate-case`](http://eslint.org/docs/rules/no-duplicate-case)
 
@@ -550,7 +550,7 @@
   }
   ```
 
-* **Use a single import statement per module.**
+* **Используйте один оператор импорта на модуль.**
 
   eslint: [`no-duplicate-imports`](http://eslint.org/docs/rules/no-duplicate-imports)
 
@@ -561,7 +561,7 @@
   import { myFunc1, myFunc2 } from 'module' // ✓ ok
   ```
 
-* **No empty character classes in regular expressions.**
+* **Запрещены пустые символьные классы в регулярных выражениях.**
 
   eslint: [`no-empty-character-class`](http://eslint.org/docs/rules/no-empty-character-class)
 
@@ -570,7 +570,7 @@
   const myRegex = /^abc[a-z]/   // ✓ ok
   ```
 
-* **No empty destructuring patterns.**
+* **Запрещены пустые шаблоны деструктуризации.**
 
   eslint: [`no-empty-pattern`](http://eslint.org/docs/rules/no-empty-pattern)
 
@@ -579,7 +579,7 @@
   const { a: { b } } = foo      // ✓ ok
   ```
 
-* **No using `eval()`.**
+* **Запрещено использование `eval()`.**
 
   eslint: [`no-eval`](http://eslint.org/docs/rules/no-eval)
 
@@ -588,7 +588,7 @@
   var result = user[propName]             // ✓ ok
   ```
 
-* **No reassigning exceptions in `catch` clauses.**
+* **Запрещено повторное присваивание исключений в блоках `catch`.**
 
   eslint: [`no-ex-assign`](http://eslint.org/docs/rules/no-ex-assign)
 
@@ -606,7 +606,7 @@
   }
   ```
 
-* **No extending native objects.**
+* **Никаких расширяемых собственных объектов.**
 
   eslint: [`no-extend-native`](http://eslint.org/docs/rules/no-extend-native)
 
@@ -614,7 +614,7 @@
   Object.prototype.age = 21     // ✗ avoid
   ```
 
-* **Avoid unnecessary function binding.**
+* **Избегайте ненужной привязки функций.**
 
   eslint: [`no-extra-bind`](http://eslint.org/docs/rules/no-extra-bind)
 
