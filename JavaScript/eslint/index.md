@@ -1,28 +1,27 @@
 
 
+Запуск встроенный ESLint внутри standard
+
+Не устанавливайте eslint, потому что standard уже включает нужную версию ESLint внутри себя.
+
 ```bash
-npm install --save-dev  eslint
 npm install standard --save-dev
 ```
 
-Явно обновите standard до v17+
-```bash
-npm install --save-dev standard@17
-```
-
-Создать файл .eslint.config.js
+Добавляем в package.json
 
 ```
-// eslint.config.js
-import standard from 'standard/eslint-config.mjs';
-
-export default [
-  ...standard,
-  {
-    languageOptions: {
-      ecmaVersion: 2024,
-      sourceType: 'script', // или 'module', если используете ES modules
-    },
+  "scripts": {
+    "lint": "standard",
+    "lint:fix": "standard --fix"
   },
-];
 ```
+
+Команды запуска
+
+```bash
+  npm run lint
+  npm run lint:fix
+```
+
+Так же для vscode существует плагин StandardJS - JavaScript Standard Style

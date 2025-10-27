@@ -37,13 +37,7 @@
 
 **Настройка линтера**
 
-* ESLint
-* Prettier
+* StandardJS — это линтер + форматтер в одном [link](./JavaScript/eslint/index.md)
 
 **Интеграция с системой контроля версий:**
 * Pre-commit хуки (через Husky, lint-staged)
-
-**Использование конфигурационных файлов:**
-* .eslint.config.js, 
-* .prettierrc, 
-* .editorconfig
