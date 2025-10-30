@@ -14,7 +14,7 @@
 * Perl
 * Ruby
 * Java
-* [JavaScript](./JavaScript/)
+* JavaScript
 * Lua
 * Haskell
 * Erlang
@@ -24,26 +24,20 @@
 
 ## JavaScript
 
-### Cтилb кодирования
+### Cтили кодирования
 
 **Общепринятые стандарты**
 
 * [Airbnb JavaScript Style Guide](https://github.com/airbnb/javascript)
 * [Google JavaScript Style Guide](https://google.github.io/styleguide/jsguide.html)
-* [StandardJS](https://standardjs.com/)
+* + [StandardJS](https://standardjs.com/)
 * [Idiomatic.js](https://github.com/rwaldron/idiomatic.js)
 
 ### Автоматизация проверки соответствия
 
 **Настройка линтера**
 
-* ESLint
-* Prettier
+* StandardJS — это линтер + форматтер в одном [link](./JavaScript/eslint/index.md)
 
 **Интеграция с системой контроля версий:**
 * Pre-commit хуки (через Husky, lint-staged)
-
-**Использование конфигурационных файлов:**
-* .eslintrc.js, 
-* .prettierrc, 
-* .editorconfig
